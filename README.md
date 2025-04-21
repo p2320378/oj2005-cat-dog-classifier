@@ -26,20 +26,49 @@ https://github.com/user-attachments/assets/5da4bcc5-61b4-48f6-81f2-ef56c8539b88
   - Better suited for machine learning projects requiring frequent testing
 
 ### Target Market
-- Pet-related mobile applications
-- Veterinary clinics for patient categorization
-- Animal shelter management systems
-- Educational tools for machine learning
+- Pet-related mobile applications: Enhance user experience by providing pet identification features.
+- Veterinary clinics for patient categorization: Automate patient categorization for cats and dogs.
+- Animal shelter management systems: Streamline animal intake processes.
+- Educational tools for machine learning: Serve as a beginner-friendly project for ML studies.
 
 ## Software Development Plan
 
 ### Development Process
-1. **Requirements Gathering** (1 day)
-2. **Model Development** (2 day)
-3. **Web Interface Implementation** (1 day)
-4. **Testing & Validation** (1 day)
-5. **Deployment** (3 day)
 
+1.**Requirements Gathering** (Day 1)
+Identify the scope of the classifier: binary classification (cat vs. dog).
+Choose a lightweight yet accurate convolutional neural network (CNN) architecture for deployment.
+Collect a labeled dataset of cat and dog images (e.g., Kaggle’s Dog vs. Cat dataset).
+Perform data preprocessing:
+Resize images to a consistent shape (e.g., 224x224 pixels).
+Normalize pixel values and apply augmentations (flip, rotate, crop) to improve generalization.
+
+2. **Model Development** (Days 2-3)
+Build a CNN model using PyTorch:
+Use convolutional layers for feature extraction.
+Add dropout and batch normalization for regularization.
+Design fully connected layers for classification.
+Train the model on the prepared dataset and optimize using cross-entropy loss.
+Evaluate the model’s accuracy on a validation dataset.
+
+3. **Web Interface Implementation** (Day 4)
+Develop a simple Flask web application:
+Allow users to upload an image via a user-friendly interface.
+Pass the image to the pre-trained CNN model for prediction.
+Display the result (cat/dog) along with probabilities.
+
+4. **Testing & Validation** (Day 5)
+Conduct unit tests for each module (e.g., image preprocessing, model inference).
+Perform end-to-end testing of the web application with various test images.
+Validate model accuracy using additional test datasets.
+
+5. **Deployment** (Days 6-8)
+Containerize the application using Docker for consistent deployment.
+Deploy the web app to Vercel for scalable hosting.
+Ensure the app is mobile-friendly with responsive design.
+6.**Post-deployment Monitoring**(Ongoing)
+Gather user feedback and monitor server performance.
+Optimize model performance based on real-world usage.
 ## Future Roadmap 🚀
 ### Short-term (Next 2 weeks)
  Expand to 10 common pet categories (birds, rabbits, etc.)

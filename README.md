@@ -54,7 +54,8 @@ https://github.com/user-attachments/assets/5da4bcc5-61b4-48f6-81f2-ef56c8539b88
  AR overlay for real-time identification
 
 ### Team Members
-<img width="827" alt="4280fda1e8688a8e1116a7ffb0947b2" src="https://github.com/user-attachments/assets/43547769-53a8-4867-b34d-3c1768b206a2" />
+<img width="677" alt="ceabaa5e456563be08f141026e9bced" src="https://github.com/user-attachments/assets/c8751f98-bd23-4b9d-96a7-b9e6089fa699" />
+
 
 
 ### Schedule
@@ -95,13 +96,12 @@ python app.py
 
 
 Key features of this README:
-1. **Graphical Abstract** placeholder (replace with actual diagram)
+1. **Graphical Abstract** 
 2. Clear development methodology explanation
 3. Detailed project timeline and team structure
 4. Algorithm documentation with code highlighting
 5. Current/Future status sections with checkboxes
 6. Quick start guide for new users
-7. Complete API documentation
-8. License information
+
 
 
